@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: aliceblue; */
+}
+
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    background-color: #2db6b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+.logoContiner{
+    display: block;
+    margin: auto 9px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(68, 68, 227);
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+     background: url("/assests/logo.gif");
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 50%; 
+}
+.containerr{
+    min-height: 10vh;
+    width: 60vw;
+    /* background-color: rgb(16, 201, 226); */
+    margin: 50px auto;
+    border-radius: 10px;
+    background: rgb(140, 240, 234);
+background: linear-gradient(170deg, rgba(176,191,190,1) 0%, rgba(31,177,178,0.9389005602240896) 87%);
+ box-shadow: 3px 6px 2px #888888;
+}
+@media(max-width:800px) {
+    .containerr{
+        width: 90vw
+}
+}
+button:focus {
+    background-color:rgb(70, 181, 236);
+  }
+h2{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+.inputcity{
+    width: 80%;
+    height: 30%;
+    display: block;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    box-shadow: 2px 4px 2px #888888;
+}
+.w-report ul {
+    list-style-position: inside; /* Place the bullet inside the content area */
+    padding-left: 20px; /* Adjust padding to fine-tune position */
+  }
+.s-btns{
+    display: block;
+    padding: 5px;    
+}
+.btn{
+    padding: 8px;
+    /* background-color: rgb(25, 25, 19); */
+    border: 1px solid;
+    border-radius: 10%;
+}
+.btn-top{
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    /* padding: 5px; */
+    
+}
+.btn-mid{
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    /* padding: 5px; */
+
+}
+.btn-end{
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    /* padding: 5px; */
+
+}
+.pd{
+    margin: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border:2px solid black;
+    padding: 8px;
+    text-align: center;
+    font:bold;
+}
+
+th {
+    text-align: center;
+    background-color: #728199;
+}
+thead{
+    text-align: center;
+
+}
+/* Yellow rows */
+tr:nth-child(even) {
+    background-color: rgb(214, 214, 151);
+}
+
+/* White rows */
+tr:nth-child(odd) {
+    background-color: white;
+}
+.tut{
+    padding: 9%;
+    line-height: 130%;
+}
+.tut p{
+    padding: 7px;
+}
+.footer{
+    /* box-sizing: border-box;
+    padding: 10px;
+    margin: 20px; */
+    background-color: rgb(5, 1, 6);
+    color: white;
+    width: 100vw;
+    /* height: 150px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 200%;
+    /* position: absolute;
+    bottom: 0px; */
+}
+.social{
+    width: 100%;
+    height: 100%;
+
+  }
+  .social-txt{
+    margin: 10px;
+  }
+  .social ul{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .social li{
+   list-style: none;
+  
+  }
+  .social li{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+  .social-img{
+    width: 100%;
+    height: 100%;
+    
+    border: 1px solid black;
+    border-radius: 50%;
+  
+  }
+  .s1{
+  
+    background: rgb(245, 8, 8) url("/assests/youtube-logo-png-2074.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .s1:hover{
+    animation: button-scalup 1.2s 1 ;
+  }
+  .s2{
+  
+    background: url("/assests/whatsapp.svg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .s2:hover{
+    animation: button-scalup .3s 1 ;
+  }
+  .s3{
+    background: url("/assests/instagram.svg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .s3:hover{
+    animation: button-scalup 1.2s 1 ;
+  }
+  .s4{
+    background: url("/assests/twitter-logo.jpeg");
+    background-size: cover;
+    background-position: center center;
+  }
+.credit{
+    text-decoration: none;
+}
+.footer a{
+    margin-top: 30px;
+    color: white;  
+}
