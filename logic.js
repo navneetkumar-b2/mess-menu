@@ -265,15 +265,18 @@ let menu = {
       }
     ]      //closing -- days is an array with objects(7 mon,tue,wed...) as a value
   };  //const menu ==closing
-alert(menu.days[day].meals[i].meals)
+// alert(menu.days[day].meals[i].meals)
 
   function getTodayDay(){
     const d = new Date();
     let dayy = d.getDay();
     return dayy
 }
+
 function HandleOnClick(params) {
-    // alert(params)
+  let btn=document.querySelector(".btn") //changing intial butto color
+  btn.style.backgroundColor=''
+
     if(params<=6){
         displayMenu(params)
     }
@@ -326,13 +329,13 @@ for (let i = 0; i < meals.length; i++) {
 tableHTML += `</tbody></table>`;
 
 weather_body.innerHTML = tableHTML;
-
-
-
-
-
-
-
-    
 }
+function initialCall(){
+  const today=getTodayDay()
+displayMenu(today)
+let btn=document.querySelector(".btn")
+// btn.style.Color="blue"
+btn.style.backgroundColor='rgb(70, 181, 236)'
+}
+initialCall()
 
